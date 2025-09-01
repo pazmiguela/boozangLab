@@ -1,21 +1,10 @@
 // @ts-check
 import { defineConfig, devices } from '@playwright/test';
 
-// import path from "path";
-// import dotenv from "dotenv";
-// dotenv.config({ quiet: true });
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-
-// dotenv.config({ path: path.resolve(".env") });
-
 /**
  * @see https://playwright.dev/docs/test-configuration
  */
 
-// export const STORAGE_STATE = path.join("./.auth/user.json");
 
 export default defineConfig({
   testDir: './tests',
@@ -123,13 +112,12 @@ export default defineConfig({
     // },
   ],
 
-  /* Run your local dev server before starting the tests
+  // Run your local dev server before starting the tests
    webServer: {
      command: 'node backend/server.mjs',
-     url: 'http://localhost:3000',
+     url: 'http://localhost:3000/health',
      reuseExistingServer: !process.env.CI,
   }
-  */
 })
 
 // playwright.config.ts

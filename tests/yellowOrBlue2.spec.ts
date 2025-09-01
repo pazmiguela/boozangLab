@@ -4,7 +4,7 @@ test('Successfully use the page', async ({ page }) => {
   await page.goto('https://thelab.boozang.com/yellowOrBlue');
   await page.getByRole('button', { name: 'Generate Color' }).click();
   await expect(page.locator('h5.color')).toBeVisible();
-
+  
   const outputText = (await page.locator('h5.color').textContent())?.trim().toLowerCase();
   console.log('Raw output text:', outputText);
 
