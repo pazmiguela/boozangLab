@@ -112,12 +112,12 @@ export default defineConfig({
     // },
   ],
 
-  // Run your local dev server before starting the tests
+  /* Run your local dev server before starting the tests
    webServer: {
      command: 'node backend/server.mjs',
      url: 'http://localhost:3000/health',
      reuseExistingServer: !process.env.CI,
-  }
+  }*/
 })
 
 // playwright.config.ts
