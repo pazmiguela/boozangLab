@@ -1,5 +1,3 @@
-//This file defines the class concatenateStrings.
-
 import { Page, Locator } from '@playwright/test';   
 
 export class ConcatenateStrings {
